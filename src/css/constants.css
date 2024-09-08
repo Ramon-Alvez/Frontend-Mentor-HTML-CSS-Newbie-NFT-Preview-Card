@@ -1,0 +1,29 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --FontColor: hsl(215, 51%, 70%);
+    --Active: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+
+    --MainBG: hsl(217, 54%, 11%);
+    --CardBG: hsl(216, 50%, 16%);
+    --Line: hsl(215, 32%, 27%);
+    --Contrast: hsl(0, 0%, 100%);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --Paragraph: 18px;
+
+    /* ### Font */
+
+    /* - Family: [Outfit](https://fonts.google.com/specimen/Outfit) */
+    /* - Weights: 300, 400, 600 */
+
+    /* > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. */
+
+}

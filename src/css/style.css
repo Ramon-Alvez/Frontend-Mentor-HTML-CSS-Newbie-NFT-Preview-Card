@@ -1,0 +1,139 @@
+body{
+    background-color: var(--MainBG);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--FontColor);
+}
+
+a{
+    color: var(--Contrast); 
+}
+
+
+
+.card{
+    background-color: var(--CardBG);
+    font-family: "Outfit", sans-serif;
+    max-width: 400px;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.card 
+    .image{
+        position: relative;
+        display: flex;
+}
+
+.card 
+    .image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+}
+
+
+
+.content
+    .title{
+        margin: 20px 0;
+}
+
+.content
+    .infos{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        align-content: center;
+}
+
+.content
+    .infos p:first-child{
+        color: var(--Active);    
+}
+
+.content
+    .infos p:first-child::before{
+        content: '';
+        display: inline-block;
+        background: url(../images/icon-ethereum.svg) no-repeat center;
+        width: 11px;
+        height: 18px;
+        padding-right: 5px;
+}
+
+.content
+    .infos p:last-child::before{
+        content: '';
+        display: inline-block;
+        background: url(../images/icon-clock.svg) no-repeat center;
+        width: 17px;
+        height: 17px;
+        padding-right: 5px;
+}
+
+
+
+
+.creator{
+    display: flex;
+    align-items: center;
+}
+
+.creator img{
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--Contrast);
+    margin-right: 20px;
+}
+
+
+
+.footer{
+    margin: 20px;
+}
+
+.footer .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+
+
+
+/* EFFECTS */
+
+a:hover{
+    color: var(--Active);
+    transition: 0.4s ease-in-out;
+}
+
+.card .image:hover:before{
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+
+    background-color: var(--Active);
+    opacity: 0.6;
+}
+
+.card .image:hover::after{
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/icon-view.svg) no-repeat center;
+
+    cursor: pointer;
+}
