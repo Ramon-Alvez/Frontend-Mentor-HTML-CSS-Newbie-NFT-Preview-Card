@@ -18,10 +18,13 @@ a{
 .card{
     background-color: var(--CardBG);
     font-family: "Outfit", sans-serif;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 16px;
-    padding: 30px;
+    padding: 25px;
     margin: 20px;
+
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .card 
@@ -42,19 +45,28 @@ a{
 .content
     .title{
         margin: 20px 0;
+        font-size: 18px;
 }
 
 .content
     .infos{
         display: flex;
         justify-content: space-between;
-        margin: 20px 0;
+        padding: 20px 0;
         align-content: center;
+
+        border-bottom: 0.1px solid hsl(215, 51%, 70%, 0.5);
 }
 
 .content
     .infos p:first-child{
-        color: var(--Active);    
+        color: var(--Active);  
+        font-weight: 600;  
+}
+
+.content
+    .infos p:last-child{
+        font-size: 16px; 
 }
 
 .content
@@ -65,6 +77,8 @@ a{
         width: 11px;
         height: 18px;
         padding-right: 5px;
+        position: relative;
+        top: 2px;
 }
 
 .content
@@ -75,6 +89,8 @@ a{
         width: 17px;
         height: 17px;
         padding-right: 5px;
+        position: relative;
+        top: 2px;
 }
 
 
@@ -83,13 +99,16 @@ a{
 .creator{
     display: flex;
     align-items: center;
+    margin-top: 20px;
+
+    font-size: 16px;
 }
 
 .creator img{
     height: 35px;
     border-radius: 50%;
     border: 1px solid var(--Contrast);
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 
@@ -122,6 +141,7 @@ a:hover{
     width: 100%;
     height: 100%;
     border-radius: 8px;
+    transition: 0.4s ease-in-out;
 
     background-color: var(--Active);
     opacity: 0.6;
@@ -134,6 +154,7 @@ a:hover{
     width: 100%;
     height: 100%;
     background: url(../images/icon-view.svg) no-repeat center;
+    transition: 0.4s ease-in-out;
 
     cursor: pointer;
 }
